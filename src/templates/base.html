@@ -1,0 +1,37 @@
+<!DOCTYPE html>{% load staticfiles %}
+<html lang="en">
+<head>
+  <!-- block meta -->
+    {% block meta %} {% include 'partials/_meta.html' %} {% endblock meta %}
+  <!-- endblock meta -->
+
+  <title>{% block title %} - Nepali Learner {% endblock title %}</title>
+
+  <!-- overall website fonts block -->
+    {% block fonts %} {% include 'partials/_fonts.html %}'}{% endblock fonts}
+  <!-- endblock fonts -->
+
+  <!-- block css -->
+    {% block css %} {% include 'partials/_css.html' %}{% endblock css %}
+  <!-- endblock css -->
+</head>
+
+<body>
+  <!-- block header -->
+    {% block header %} {% include 'partials/_header.html' %} {% endblock header %}
+  <!-- endblock header -->
+
+  <!-- block content -->
+  {% block content %}{% endblock content %}
+  <!-- endblock content -->
+
+  <!-- footer block -->
+    {% block footer %} {% include 'partials/_footer.html' %}
+  <!-- endblock footer -->
+
+  <!-- block scripts -->
+    {% block scripts %}{% include 'partials/_scripts.html' %}
+  <!-- endblock scripts -->
+  
+</body>
+</html>
